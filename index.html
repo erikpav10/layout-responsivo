@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./index.css">
+<title>Minha Loja Virtual</title>
+</head>
+<body>
+
+<header>
+    <h1>Minha Loja Virtual</h1>
+    <div class="about-tab" onclick="showAboutSection()">
+        Sobre a Loja
+    </div>
+</header>
+
+<div class="container">
+
+<section class="about">
+<div class="about-image">
+    <img src="./aaron-burden-J5OoM_-68VI-unsplash.jpg" alt="Imagem da Loja">
+</div>
+<div class="about-text">
+    <h2>Sobre a Loja</h2>
+    <hr>
+    <p>Elegância e Conforto:
+
+        Na Boutique Celestial, acreditamos que elegância e conforto não são mutuamente exclusivos. Nossas roupas são confeccionadas com tecidos de alta qualidade, proporcionando não apenas estilo, mas também um ajuste confortável que torna cada momento ainda mais especial.</p>
+</div>
+</section>
+
+<section class="products">
+    <div class="product">
+    <img src="./conjunto4.jpg" alt="Produto 1">
+    <h3>Conjuto</h3>
+    <p>Destaca-se um conjunto de roupas em tons mais escuros.
+    </p>
+    <button>Adicionar ao Carrinho</button>
+    </div>
+    <!-- Repita este bloco para os outros produtos -->
+
+
+    <div class="product">
+    <img src="./camiseta 1 branca.png" alt="Produto 2">
+    <h3>Camisa</h3>
+    <p>Refere-se a uma camiseta branca</p>
+    <button>Adicionar ao Carrinho</button>
+    </div>
+
+
+    <div class="product">
+    <img src="./conjunto3.jpg" alt="Produto 3">
+    <h3>Calça</h3>
+    <p>foca em uma calça escura</p>
+    <button>Adicionar ao Carrinho</button>
+    </div>
+</section>
+
+</div>
+
+<footer>
+&copy; 2023 Minha Loja Virtual
+</footer>
+<script>
+    // Adicione uma função para mostrar a seção "Sobre a Loja"
+    function showAboutSection() {
+    document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

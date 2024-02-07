@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.about-tab {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.about-tab span {
+    margin-right: 5px; /* Adiciona um espaçamento entre o ícone/texto e o botão */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image {
+    flex-basis: 48%; /* Largura da imagem (ajuste conforme necessário) */
+    margin-right: 2%; /* Espaço entre a imagem e o texto */
+}
+
+.about-text {
+    flex-basis: 48%; /* Largura do texto (ajuste conforme necessário) */
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Borda arredondada para as imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.product {
+    width: 48%; /* Largura reduzida para acomodar dois produtos por linha em telas menores */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    display: inline-block; /* Adiciona a propriedade para que os produtos fiquem em linha */
+    vertical-align: top; /* Alinha os produtos no topo */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Borda arredondada para as imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 300px; /* Limita a largura da imagem a 300 pixels */
+}
+
+/* Estilo para produtos em telas menores */
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%; /* Um produto por linha em telas menores */
+    }
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
